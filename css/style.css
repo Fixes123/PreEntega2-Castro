@@ -1,455 +1,436 @@
-* {
-    Margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-@font-face {
-    font-family: "Barlow_light";
-    src: url(../fonts/Barlow-Light.ttf);
-}
-
-@font-face {
-    font-family: "Barlow_Extralight";
-    src: url(../fonts/Barlow-ExtraLight.ttf);
-}
-
-@font-face {
-    font-family: "andalemo";
-    src: url(../fonts/andalemo.ttf);
-}
-
-:root {
-    --primary: #121f3d;
-    --white: #fff;
-    --gray: #2a324b;
-}
-
-
-
-/*Navbar*/
-
 nav {
-    background-color: rgba(0, 0, 0, 0.432);
+  background-color: rgba(0, 0, 0, 0.432);
 }
 
 li {
-    color: #fff;
-    list-style-type: none;
-    margin-top: 5px ;
+  color: #fff;
+  list-style-type: none;
+  margin-top: 5px;
 }
 
 li a {
-    font-family: andalemo;
-    text-decoration: none;
+  font-family: andalemo;
+  text-decoration: none;
 }
 
 .nav__checkbox {
-    display: none;
+  display: none;
 }
-
 
 .nav__toggle {
-    position: absolute;
-    cursor: pointer;
-    margin: 01rem;
-    right: 0;
-    
+  position: absolute;
+  cursor: pointer;
+  margin: 1rem;
+  right: 0;
 }
 
-
 .nav__toggle svg {
-    width: 1rem;
-    fill: var(--white);
+  width: 1rem;
+  fill: var(--white);
 }
 
 .nav__toggle .close {
-    display: none;
+  display: none;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
-
-#nav__checkbox:checked~.nav__menu {
-    display: block;
+#nav__checkbox:checked ~ .nav__menu {
+  display: block;
 }
 
-#nav__checkbox:checked~.close {
-    display: block;
+#nav__checkbox:checked ~ .close {
+  display: block;
 }
 
-#nav__checkbox:checked~.menu {
-    display: none;
+#nav__checkbox:checked ~ .menu {
+  display: none;
 }
-
 
 @media (max-width: 576px) {
-    .li_nav {
-        display: none;
-    }
-
-    .menu {
-        display: block;
-
-    }
-
-    .nav__menu li {
-        display: none;
-    }
-
-    .nav__toggle .close {
-        display: none;
-    }
-
-    #nav__checkbox:checked~ul.nav__menu li {
-        display: block;
-    }
-
-    #nav__checkbox:checked~label.nav__toggle .close {
-        display: block;
-    }
-
-    #nav__checkbox:checked~label.nav__toggle .menu {
-        display: none;
-    }
-
-    .nav__menu {
-        margin-left: 10px;
-        flex-direction: column;
-    }
-
-
+  .li_nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .nav__menu li {
+    display: none;
+  }
+  .nav__toggle .close {
+    display: none;
+  }
+  #nav__checkbox:checked ~ ul.nav__menu li {
+    display: block;
+  }
+  #nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;
+  }
+  #nav__checkbox:checked ~ label.nav__toggle .menu {
+    display: none;
+  }
+  .nav__menu {
+    margin-left: 10px;
+    flex-direction: column;
+  }
 }
-
-
 li a {
-    color: inherit;
-    font-size: 1.1rem;
-    text-decoration: none;
-    margin-left: 50px;
-    margin-right: 50px;
+  color: inherit;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .close .menu {
-    margin-top: 0.3rem;
+  margin-top: 0.3rem;
 }
 
-.nav__menu { 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-
-
 
 /*INDEX SIDE*/
-
 .index_section_1 {
-    background-color: rgb(0, 0, 0);
-    background-image: url(../assets/img/steins-gate-wallpaper-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: rgb(0, 0, 0);
+  background-image: url(../assets/img/steins-gate-wallpaper-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-    font-family: "Barlow_Extralight";
-    font-weight: 300;
-    font-size: 60px;
-    text-align: center;
-    color: rgb(228, 165, 82);
-    text-shadow: 3px 0 5px #a65310;
-    margin-bottom: 1px;
-    padding-top: 100px;
-    letter-spacing: -1px;
+  font-family: "Barlow_Extralight";
+  font-weight: 300;
+  font-size: 60px;
+  text-align: center;
+  color: rgb(228, 165, 82);
+  text-shadow: 3px 0 5px #a65310;
+  margin-bottom: 1px;
+  padding-top: 100px;
+  letter-spacing: -1px;
 }
 
 .h2_index {
-    font-family: "Barlow_Extralight";
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
-    color: rgb(228, 165, 82);
-    text-shadow: 3px 0 5px #a65310;
-    padding-top: 400px;
-    padding-right: 10px;
-    padding-bottom: 100px;
-    margin-bottom: -16px;
+  font-family: "Barlow_Extralight";
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  color: rgb(228, 165, 82);
+  text-shadow: 3px 0 5px #a65310;
+  padding-top: 400px;
+  padding-right: 10px;
+  padding-bottom: 100px;
+  margin-bottom: -16px;
 }
 
 .index_section_2 {
-    background-color: black;
-    background-image: url(../assets/img/steins-gate-visual-novel-4.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: black;
+  background-image: url(../assets/img/steins-gate-visual-novel-4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .trailer_sg {
-    margin-left: 110px;
-    margin-top: 70px;
-
+  margin-left: 110px;
+  margin-top: 70px;
 }
 
-
 .it_is_possible {
-    font-family: "Barlow_Light";
-    color: rgb(228, 165, 82);
-    text-shadow: 3px 0 5px #a65310;
-    font-size: 25px;
-    text-align: center;
-    margin-right: 520px;
-    margin-bottom: 30px;
-    margin-top: 60px;
-    padding-top: 100px;
-
-
-
+  font-family: "Barlow_Light";
+  color: rgb(228, 165, 82);
+  text-shadow: 3px 0 5px #a65310;
+  font-size: 25px;
+  text-align: center;
+  margin-right: 520px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  padding-top: 100px;
 }
 
 .footer_index {
-    color: rgb(91, 91, 92);
-    margin-top: 100px;
+  color: rgb(91, 91, 92);
+  margin-top: 100px;
 }
 
 .footer_index2 {
-    color: rgb(91, 91, 92);
-    margin-top: 200px;
+  color: rgb(91, 91, 92);
+  margin-top: 200px;
 }
 
-
-
+@media (max-width: 576px) {
+  .h2_index {
+    font-size: 15px;
+    margin-left: 10px;
+    padding-top: 250px;
+  }
+  .trailer_sg {
+    margin-left: 15px;
+  }
+  .it_is_possible {
+    font-size: 12px;
+    margin-right: 0px;
+    margin-top: 35px;
+    margin-left: 0px;
+    margin-right: 25px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+}
 /*STORY SIDE*/
-
 #story_body {
-    background-color: rgb(0, 0, 0);
-    background-repeat: repeat;
-    background-size: cover;
+  background-color: rgb(0, 0, 0);
+  background-repeat: repeat;
+  background-size: cover;
 }
-
 
 .h1_story {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .parrafo_main_story {
-    font-family: "Barlow_Extralight";
-    text-align: left;
-    color: #fff;
-    font-size: 17px;
-    padding-top: 70px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-left: 100px;
+  font-family: "Barlow_Extralight";
+  text-align: left;
+  color: #fff;
+  font-size: 17px;
+  padding-top: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
-
 .h2_story_characters_games_gallery {
-    font-family: "Barlow_Extralight";
-    font-weight: 400;
-    color: rgb(228, 165, 82);
-    text-shadow: 3px 0 5px #a65310;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  font-family: "Barlow_Extralight";
+  font-weight: 400;
+  color: rgb(228, 165, 82);
+  text-shadow: 3px 0 5px #a65310;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-
 .parrafo_article_story_games {
-    font-family: "Barlow_Extralight";
-    text-align: left;
-    color: #fff;
-    font-size: 17px;
-    margin-left: 100px;
-    margin-right: 100px;
+  font-family: "Barlow_Extralight";
+  text-align: left;
+  color: #fff;
+  font-size: 17px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .image_story {
-    margin-right: 100px;
-    margin-left: 200px;
-
+  margin-right: 100px;
+  margin-left: 200px;
 }
-
 
 @media (max-width: 576px) {
-
-    .h1_story {
-        font-size: 30px;
-    }
-
-    .parrafo_main_story {
-        font-size: 10px;
-        padding-top: 0px;
-        margin-left: 30px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-    }
-
-    .h2_story_characters_games_gallery {
-        font-size: 15px;
-    }
-
-    .parrafo_article_story_games {
-        font-size: 10px;
-        margin-left: 30px;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-    }
-
-    .image_story {
-        margin-left: 10px;
-        width: 40%;
-        margin-right: 0px;
-    }
+  .h1_story {
+    font-size: 30px;
+  }
+  .parrafo_main_story {
+    font-size: 10px;
+    padding-top: 0px;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .h2_story_characters_games_gallery {
+    font-size: 15px;
+  }
+  .parrafo_article_story_games {
+    font-size: 10px;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .image_story {
+    margin-left: 10px;
+    width: 40%;
+    margin-right: 0px;
+  }
 }
-
 /*CHARACTER SIDE*/
-
 #characters_body {
-    background-color: black;
+  background-color: black;
 }
 
 .h1_characters {
-    margin-right: 40px;
-    padding-top: 75px;
+  margin-right: 40px;
+  padding-top: 75px;
 }
 
 .main_img_characters {
-    margin-left: 435px;
-    margin-top: 30px;
+  margin-left: 435px;
+  margin-top: 30px;
 }
 
-
 .my_lab_partners {
-    font-family: "andalemo";
-    font-size: 20px;
-    text-align: center;
-    color: rgb(228, 165, 82);
-    text-shadow: 3px 0 5px #a65310;
-    padding-top: 30px;
-    padding-right: 10px;
-
+  font-family: "andalemo";
+  font-size: 20px;
+  text-align: center;
+  color: rgb(228, 165, 82);
+  text-shadow: 3px 0 5px #a65310;
+  padding-top: 30px;
+  padding-right: 10px;
 }
 
 .okabe_parrafo {
-    font-family: "andalemo";
-    font-size: 20px;
-    text-align: center;
-    color: rgb(228, 165, 82);
-    text-shadow: 3px 0 5px #a65310;
-    padding-bottom: 70px;
-    padding-right: 10px;
+  font-family: "andalemo";
+  font-size: 20px;
+  text-align: center;
+  color: rgb(228, 165, 82);
+  text-shadow: 3px 0 5px #a65310;
+  padding-bottom: 70px;
+  padding-right: 10px;
 }
 
 .flexbox_characters {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .flexbox_characters_2 {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
 }
 
 .flexbox_other_characters {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
 }
 
 .parrafo_img {
-    color: #fff;
-    text-align: center;
-    padding-top: 5px;
-
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
 }
 
-
+@media (max-width: 576px) {
+  .h1_characters {
+    margin-right: 10px;
+  }
+  .main_img_characters {
+    margin-left: 70px;
+    width: 60%;
+  }
+  .my_lab_partners {
+    font-size: 13px;
+  }
+  .okabe_parrafo {
+    font-size: 13px;
+  }
+  .img_characters {
+    width: 100%;
+  }
+  .img_characters_2 {
+    width: 50%;
+    margin-left: 30px;
+  }
+  .parrafo_img {
+    font-size: 10px;
+  }
+}
 /*GAMES SIDE*/
-
 #body_games {
-    background-color: black;
+  background-color: black;
 }
 
 .h2_story_characters_games2 {
-    font-family: "Barlow_Extralight";
-    font-weight: 400;
-    color: rgb(228, 165, 82);
-    text-shadow: 3px 0 5px #a65310;
-    font-size: 30px;
-    text-align: left;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-left: 100px;
+  font-family: "Barlow_Extralight";
+  font-weight: 400;
+  color: rgb(228, 165, 82);
+  text-shadow: 3px 0 5px #a65310;
+  font-size: 30px;
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: 100px;
 }
 
-
 .parrafo_article_games {
-    font-family: "Barlow_Extralight";
-    text-align: left;
-    color: #fff;
-    font-size: 17px;
-    margin-bottom: 100px;
-    margin-left: 90px;
-    margin-right: 90px;
+  font-family: "Barlow_Extralight";
+  text-align: left;
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 100px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .article_games_div {
-    margin-top: 100px;
-    margin-bottom: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .article_games_div_1 {
-    margin-left: 55px;
-    margin-top: 100px;
+  margin-left: 55px;
+  margin-top: 100px;
 }
-
-
-/*Gallery side*/
-
-#gallery_body {
-    background-color: rgb(0, 0, 0);
-
-}
-
-
-
-.grid-row {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
-}
-
 
 @media (max-width: 576px) {
-    h1 {
-        font-size: 30px;
-    }
-
-    .h2_story_characters_games_gallery {
-        font-size: 15px;
-    }
-
-    .img_gallery {
-        width: 30%;
-    }
-
-    .gif_gallery {
-        width: 35%;
-    }
-
-    .video_gallery {
-        width: 40%;
-    }
-
+  .h2_story_characters_games2 {
+    font-size: 15px;
+    margin: 0;
+    margin-left: 30px;
+  }
+  .img_games {
+    width: 100%;
+  }
+  .article_games_div_1 {
+    margin-left: 0px;
+  }
 }
+/*Gallery side*/
+#gallery_body {
+  background-color: rgb(0, 0, 0);
+}
+
+.grid-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+  .h2_story_characters_games_gallery {
+    font-size: 15px;
+  }
+  .img_gallery {
+    width: 30%;
+  }
+  .gif_gallery {
+    width: 35%;
+  }
+  .video_gallery {
+    width: 40%;
+  }
+}
+@font-face {
+  font-family: "Barlow_light";
+  src: url(../fonts/Barlow-Light.ttf);
+}
+@font-face {
+  font-family: "Barlow_Extralight";
+  src: url(../fonts/Barlow-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "andalemo";
+  src: url(../fonts/andalemo.ttf);
+}
+
+/*# sourceMappingURL=style.css.map */

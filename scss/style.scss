@@ -1,0 +1,23 @@
+@import "./base/vars";
+
+@import "./componentes/navbar";
+@import "./componentes/index";
+@import "./componentes/story";
+@import "./componentes/characters";
+@import "./componentes/games";
+@import "./componentes/gallery";
+
+
+@font-face {
+	font-family: "Barlow_light";
+	src: url(../fonts/Barlow-Light.ttf);
+}
+@font-face {
+	font-family: "Barlow_Extralight";
+	src: url(../fonts/Barlow-ExtraLight.ttf);
+}
+@font-face {
+	font-family: "andalemo";
+	src: url(../fonts/andalemo.ttf);
+}
+
