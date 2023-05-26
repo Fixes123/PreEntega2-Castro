@@ -26,27 +26,41 @@
         justify-content: space-evenly;
         margin-bottom: 50px;
     }
-}
 
-@media (max-width: 576px) {
-    h1 {
-        font-size: 30px;
+    @media (max-width: 576px) {
+        h1 {
+            font-size: 30px;
+        }
+
+        .h2_story_characters_games_gallery {
+            font-size: 15px;
+            padding-bottom: 50px;
+        }
+
+        .grid-row {
+            display: block;
+            margin-bottom: 0px;
+        }
+
+        .img_gallery {
+            width: 50%;
+            margin-left: 105px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .gif_gallery {
+            width: 50%;
+            margin-left: 105px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        .video_gallery {
+            width: 50%;
+            margin-left: 105px;
+            margin-bottom: 30px;
+        }
     }
-
-    .h2_story_characters_games_gallery {
-        font-size: 15px;
-    }
-
-    .img_gallery {
-        width: 30%;
-    }
-
-    .gif_gallery {
-        width: 35%;
-    }
-
-    .video_gallery {
-        width: 40%;
-    }
-
 }

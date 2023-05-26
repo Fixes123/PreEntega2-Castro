@@ -98,9 +98,14 @@ $background-color_1: rgb(0, 0, 0);
 	.parrafo_main_story {
 		font-size: 10px;
 		padding-top: 0px;
-		margin-left: 30px;
+		margin-left: 10px;
 		margin-right: 0px;
 		margin-bottom: 0px;
+		margin-top: 40px;
+	}
+
+	.row {
+		display: block;
 	}
 
 	.h2_story_characters_games_gallery {
@@ -116,8 +121,9 @@ $background-color_1: rgb(0, 0, 0);
 	}
 
 	.image_story {
-		margin-left: 10px;
-		width: 40%;
+		width: 50%;
+		margin-left: 100px;
+		margin-top: 50px;
 		margin-right: 0px;
 	}
 }

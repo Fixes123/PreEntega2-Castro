@@ -141,6 +141,16 @@ li a {
   text-align: center;
   text-shadow: 3px 0 5px #a65310;
 }
+@media (max-width: 576px) {
+  .index_section_1 h1 {
+    font-size: 40px;
+  }
+  .index_section_1 .h2_index {
+    font-size: 15px;
+    margin-left: 10px;
+    padding-top: 250px;
+  }
+}
 
 .index_section_2 {
   background-color: black;
@@ -167,18 +177,12 @@ li a {
   color: rgb(91, 91, 92);
   margin-top: 200px;
 }
-
 @media (max-width: 576px) {
-  .h2_index {
+  .index_section_2 .trailer_sg {
+    width: 70%;
+  }
+  .index_section_2 .it_is_possible {
     font-size: 15px;
-    margin-left: 10px;
-    padding-top: 250px;
-  }
-  .trailer_sg {
-    margin-left: 15px;
-  }
-  .it_is_possible {
-    font-size: 12px;
     margin-right: 0px;
     margin-top: 35px;
     margin-left: 0px;
@@ -187,6 +191,7 @@ li a {
     padding-top: 0px;
   }
 }
+
 /*STORY SIDE*/
 #story_body {
   background-color: rgb(0, 0, 0);
@@ -255,9 +260,13 @@ li a {
   .parrafo_main_story {
     font-size: 10px;
     padding-top: 0px;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-right: 0px;
     margin-bottom: 0px;
+    margin-top: 40px;
+  }
+  .row {
+    display: block;
   }
   .h2_story_characters_games_gallery {
     font-size: 15px;
@@ -270,8 +279,9 @@ li a {
     margin-bottom: 0px;
   }
   .image_story {
-    margin-left: 10px;
-    width: 40%;
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
     margin-right: 0px;
   }
 }
@@ -333,32 +343,53 @@ li a {
   text-align: center;
   padding-top: 5px;
 }
-
 @media (max-width: 576px) {
-  .h1_characters {
+  #characters_body .h1_characters {
     margin-right: 10px;
+    font-size: 40px;
   }
-  .main_img_characters {
-    margin-left: 70px;
+  #characters_body .main_img_characters {
+    margin-left: 80px;
     width: 60%;
   }
-  .my_lab_partners {
+  #characters_body .my_lab_partners {
     font-size: 13px;
   }
-  .okabe_parrafo {
+  #characters_body .okabe_parrafo {
     font-size: 13px;
   }
-  .img_characters {
-    width: 100%;
+  #characters_body .h2_story_characters_games_gallery {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-  .img_characters_2 {
+  #characters_body .flexbox_characters {
+    display: block;
+  }
+  #characters_body .flexbox_characters_2 {
+    display: block;
+  }
+  #characters_body .flexbox_other_characters {
+    display: block;
+  }
+  #characters_body .img_characters {
     width: 50%;
-    margin-left: 30px;
+    margin-left: 100px;
+    margin-top: 40px;
   }
-  .parrafo_img {
+  #characters_body .img_characters_2 {
+    width: 50%;
+    margin-left: 100px;
+  }
+  #characters_body .parrafo_img {
     font-size: 10px;
+    padding-bottom: 40px;
+  }
+  #characters_body .eisuke, #characters_body .yukitaha, #characters_body .street {
+    width: 30%;
+    margin-left: 140px;
   }
 }
+
 /*GAMES SIDE*/
 #body_games {
   background-color: black;
@@ -402,20 +433,26 @@ li a {
   margin-left: 55px;
   margin-top: 100px;
 }
-
 @media (max-width: 576px) {
-  .h2_story_characters_games2 {
+  #body_games h1 {
+    margin-top: 20px;
+    font-size: 40px;
+  }
+  #body_games .h2_story_characters_games2 {
     font-size: 15px;
     margin: 0;
     margin-left: 30px;
+    padding-top: 100px;
+    padding-bottom: 40px;
   }
-  .img_games {
+  #body_games .img_games {
     width: 100%;
   }
-  .article_games_div_1 {
+  #body_games .article_games_div_1 {
     margin-left: 0px;
   }
 }
+
 /*Gallery side*/
 #gallery_body {
   background-color: rgb(0, 0, 0);
@@ -436,24 +473,37 @@ li a {
   justify-content: space-evenly;
   margin-bottom: 50px;
 }
-
 @media (max-width: 576px) {
-  h1 {
+  #gallery_body h1 {
     font-size: 30px;
   }
-  .h2_story_characters_games_gallery {
+  #gallery_body .h2_story_characters_games_gallery {
     font-size: 15px;
+    padding-bottom: 50px;
   }
-  .img_gallery {
-    width: 30%;
+  #gallery_body .grid-row {
+    display: block;
+    margin-bottom: 0px;
   }
-  .gif_gallery {
-    width: 35%;
+  #gallery_body .img_gallery {
+    width: 50%;
+    margin-left: 105px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
-  .video_gallery {
-    width: 40%;
+  #gallery_body .gif_gallery {
+    width: 50%;
+    margin-left: 105px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #gallery_body .video_gallery {
+    width: 50%;
+    margin-left: 105px;
+    margin-bottom: 30px;
   }
 }
+
 @font-face {
   font-family: "Barlow_light";
   src: url(../fonts/Barlow-Light.ttf);

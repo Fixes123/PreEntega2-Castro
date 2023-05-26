@@ -60,22 +60,28 @@
     }
 
     .article_games_div_1 {
-       @include margin_left_margin_top;
-    }
-}
-
-@media (max-width: 576px) {
-    .h2_story_characters_games2 {
-        font-size: 15px;
-        margin: 0;
-        margin-left: 30px;
+        @include margin_left_margin_top;
     }
 
-    .img_games {
-        width: 100%;
-    }
+    @media (max-width: 576px) {
+        h1{
+            margin-top: 20px;
+            font-size: 40px
+        }
+        .h2_story_characters_games2 {
+            font-size: 15px;
+            margin: 0;
+            margin-left: 30px;
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
 
-    .article_games_div_1 {
-        margin-left: 0px;
+        .img_games {
+            width: 100%;
+        }
+
+        .article_games_div_1 {
+            margin-left: 0px;
+        }
     }
 }

@@ -20,7 +20,7 @@ $background-color_2: black;
 
 .footer_index {
 	color: map-get($footer_index, footer_colour);
-	margin-top: map-get($footer_index,  margin-top-footer);
+	margin-top: map-get($footer_index, margin-top-footer);
 }
 
 /*INDEX SIDE*/
@@ -68,6 +68,18 @@ $background-color_2: black;
 			shadow: 3px 0 5px #a65310;
 		}
 	}
+
+	@media (max-width: 576px) {
+		h1 {
+			font-size: 40px;
+		}
+
+		.h2_index {
+			font-size: 15px;
+			margin-left: 10px;
+			padding-top: 250px;
+		}
+	}
 }
 
 .index_section_2 {
@@ -106,27 +118,20 @@ $background-color_2: black;
 		color: map-get($footer_index2, footer_colour);
 		margin-top: map-get($footer_index2, margin-top-footer2)
 	}
-}
 
+	@media (max-width: 576px) {
+		.trailer_sg {
+			width: 70%;
+		}
 
-@media (max-width: 576px) {
-	.h2_index {
-		font-size: 15px;
-		margin-left: 10px;
-		padding-top: 250px;
-	}
-
-	.trailer_sg {
-		margin-left: 15px;
-	}
-
-	.it_is_possible {
-		font-size: 12px;
-		margin-right: 0px;
-		margin-top: 35px;
-		margin-left: 0px;
-		margin-right: 25px;
-		padding-bottom: 0px;
-		padding-top: 0px;
+		.it_is_possible {
+			font-size: 15px;
+			margin-right: 0px;
+			margin-top: 35px;
+			margin-left: 0px;
+			margin-right: 25px;
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
 	}
 }
