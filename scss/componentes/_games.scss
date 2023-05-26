@@ -2,51 +2,80 @@
 
 #body_games {
     background-color: black;
-}
 
-.h2_story_characters_games2 {
-    font-family: "Barlow_Extralight";
-    font-weight: 400;
-    color: rgb(228, 165, 82);
-    text-shadow: 3px 0 5px #a65310;
-    font-size: 30px;
-    text-align: left;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    margin-left: 100px;
-}
+    h1 {
+        color: $color_1;
+        margin-bottom: 1px;
+        padding-top: 40px;
+        letter-spacing: -1px;
 
+        font: {
+            family: $font-family_1;
+            weight: 300;
+            size: 60px;
+        }
 
-.parrafo_article_games {
-    font-family: "Barlow_Extralight";
-    text-align: left;
-    color: #fff;
-    font-size: 17px;
-    margin-bottom: 100px;
-    margin-left: 90px;
-    margin-right: 90px;
-}
+        text: {
+            align: center;
+            shadow: 3px 0 5px #a65310;
+        }
+    }
 
-.article_games_div {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+    .h2_story_characters_games2 {
+        color: rgb(228, 165, 82);
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-left: 100px;
 
-.article_games_div_1 {
-    margin-left: 55px;
-    margin-top: 100px;
+        font: {
+            family: "Barlow_Extralight";
+            weight: 400;
+            size: 30px;
+        }
+
+        text: {
+            shadow: 3px 0 5px #a65310;
+            align: left;
+        }
+    }
+
+    .parrafo_article_games {
+        margin-bottom: 100px;
+        margin-left: 90px;
+        margin-right: 90px;
+        color: #fff;
+
+        font: {
+            family: "Barlow_Extralight";
+            size: 17px;
+        }
+
+        text: {
+            align: left;
+        }
+    }
+
+    .article_games_div {
+        @include margin_top_margin_bottom;
+    }
+
+    .article_games_div_1 {
+       @include margin_left_margin_top;
+    }
 }
 
 @media (max-width: 576px) {
-    .h2_story_characters_games2{
+    .h2_story_characters_games2 {
         font-size: 15px;
         margin: 0;
-        margin-left: 30px; 
+        margin-left: 30px;
     }
-    .img_games{
+
+    .img_games {
         width: 100%;
-    }    
-    .article_games_div_1{
+    }
+
+    .article_games_div_1 {
         margin-left: 0px;
     }
 }

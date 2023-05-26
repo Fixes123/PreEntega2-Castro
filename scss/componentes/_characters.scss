@@ -1,64 +1,99 @@
+$color_1: rgb(228, 165, 82);
+$color_2: rgb(91, 91, 92);
+$font-family_1: "Barlow_Extralight";
+$font-family_2: "Barlow_Light";
+$background-color_1: rgb(0, 0, 0);
+$background-color_2: black;
+
+
+
+
 /*CHARACTER SIDE*/
 
 #characters_body {
     background-color: black;
+    .h1_characters {
+        margin-right: 40px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+        color: $color_1;
+		margin-bottom: 1px;
+		letter-spacing: -1px;
+
+		font: {
+			family: $font-family_1;
+			weight: 300;
+			size: 60px;
+		}
+
+		text: {
+			align: center;
+			shadow: 3px 0 5px #a65310;
+		}
+        
+    }
+    
+    .main_img_characters {
+        margin-left: 435px;
+        margin-top: 30px;
+    }
+    
+    
+    .my_lab_partners {
+        color: rgb(228, 165, 82);
+        padding-top: 30px;
+        padding-right: 10px;
+        font: {
+            family: "andalemo";
+            size: 20px;
+        }
+        text: {
+            align: center;
+            shadow: 3px 0 5px #a65310;
+        }
+    }
+    
+    .okabe_parrafo {
+        color: rgb(228, 165, 82);
+        padding-bottom: 70px;
+        padding-right: 10px;
+        font: {
+            family: "andalemo";
+            size: 20px;
+        }
+    
+        text: {
+            align: center;
+            shadow: 3px 0 5px #a65310
+        }
+    }
+    
+    .flexbox_characters {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .flexbox_characters_2 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 60px;
+    }
+    
+    .flexbox_other_characters {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 60px;
+    }
+    
+    .parrafo_img {
+        color: #fff;
+        text-align: center;
+        padding-top: 5px;
+    
+    }
 }
 
-.h1_characters {
-    margin-right: 40px;
-    padding-top: 75px;
-}
 
-.main_img_characters {
-    margin-left: 435px;
-    margin-top: 30px;
-}
-
-
-.my_lab_partners {
-    font-family: "andalemo";
-    font-size: 20px;
-    text-align: center;
-    color: rgb(228, 165, 82);
-    text-shadow: 3px 0 5px #a65310;
-    padding-top: 30px;
-    padding-right: 10px;
-
-}
-
-.okabe_parrafo {
-    font-family: "andalemo";
-    font-size: 20px;
-    text-align: center;
-    color: rgb(228, 165, 82);
-    text-shadow: 3px 0 5px #a65310;
-    padding-bottom: 70px;
-    padding-right: 10px;
-}
-
-.flexbox_characters {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.flexbox_characters_2 {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 60px;
-}
-
-.flexbox_other_characters {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 60px;
-}
-
-.parrafo_img {
-    color: #fff;
-    text-align: center;
-    padding-top: 5px;
-
-}
 @media (max-width: 576px){
     .h1_characters{
         margin-right: 10px;

@@ -5,74 +5,121 @@ $font-family_2: "Barlow_Light";
 $background-color_1: rgb(0, 0, 0);
 $background-color_2: black;
 
+:root {
+	--primary: #121f3d;
+	--white: #fff;
+	--gray: #2a324b;
+}
+
+
+* {
+	Margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.footer_index {
+	color: map-get($footer_index, footer_colour);
+	margin-top: map-get($footer_index,  margin-top-footer);
+}
+
 /*INDEX SIDE*/
 .index_section_1 {
-	background-color: $background-color_1;
-	background-image: url(../assets/img/steins-gate-wallpaper-2.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: {
+		image: url(../assets/img/steins-gate-wallpaper-2.jpg);
+		color: rgb(0, 0, 0);
+		repeat: no-repeat;
+		size: cover;
+	}
+
+	h1 {
+		color: $color_1;
+		margin-bottom: 1px;
+		padding-top: 40px;
+		letter-spacing: -1px;
+
+		font: {
+			family: $font-family_1;
+			weight: 300;
+			size: 60px;
+		}
+
+		text: {
+			align: center;
+			shadow: 3px 0 5px #a65310;
+		}
+	}
+
+	.h2_index {
+		color: $color_1;
+		padding-top: 400px;
+		padding-right: 10px;
+		padding-bottom: 100px;
+		margin-bottom: -16px;
+
+		font: {
+			family: $font-family_1;
+			size: 20px;
+			style: italic;
+		}
+
+		text: {
+			align: center;
+			shadow: 3px 0 5px #a65310;
+		}
+	}
 }
-h1 {
-	font-family: $font-family_1;
-	font-weight: 300;
-	font-size: 60px;
-	text-align: center;
-	color: $color_1;
-	text-shadow: 3px 0 5px #a65310;
-	margin-bottom: 1px;
-	padding-top: 100px;
-	letter-spacing: -1px;
-}
-.h2_index {
-	font-family: $font-family_1;
-	font-size: 20px;
-	font-style: italic;
-	text-align: center;
-	color: $color_1;
-	text-shadow: 3px 0 5px #a65310;
-	padding-top: 400px;
-	padding-right: 10px;
-	padding-bottom: 100px;
-	margin-bottom: -16px;
-}
+
 .index_section_2 {
-	background-color: $background-color_2;
-	background-image: url(../assets/img/steins-gate-visual-novel-4.jpeg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: {
+		color: $background-color_2;
+		image: url(../assets/img/steins-gate-visual-novel-4.jpeg);
+		repeat: no-repeat;
+		size: cover;
+	}
+
+	.trailer_sg {
+		margin-left: 110px;
+		margin-top: 70px;
+	}
+
+	.it_is_possible {
+		color: $color_1;
+		margin-right: 520px;
+		margin-bottom: 30px;
+		margin-top: 60px;
+		padding-top: 100px;
+
+		font: {
+			family: $font-family_2;
+			size: 25px;
+		}
+
+		text: {
+			shadow: 3px 0 5px #a65310;
+			align: center;
+		}
+
+	}
+
+	.footer_index2 {
+		color: map-get($footer_index2, footer_colour);
+		margin-top: map-get($footer_index2, margin-top-footer2)
+	}
 }
-.trailer_sg {
-	margin-left: 110px;
-	margin-top: 70px;
-}
-.it_is_possible {
-	font-family: $font-family_2;
-	color: $color_1;
-	text-shadow: 3px 0 5px #a65310;
-	font-size: 25px;
-	text-align: center;
-	margin-right: 520px;
-	margin-bottom: 30px;
-	margin-top: 60px;
-	padding-top: 100px;
-}
-.footer_index {
-	color: $color_2;
-	margin-top: 100px;
-}
-.footer_index2 {
-	color: $color_2;
-	margin-top: 200px;
-}
+
+
 @media (max-width: 576px) {
 	.h2_index {
 		font-size: 15px;
 		margin-left: 10px;
 		padding-top: 250px;
 	}
+
 	.trailer_sg {
 		margin-left: 15px;
 	}
+
 	.it_is_possible {
 		font-size: 12px;
 		margin-right: 0px;

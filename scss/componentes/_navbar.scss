@@ -1,12 +1,26 @@
+$color_1: rgb(228, 165, 82);
+
 nav {
     background-color: rgba(0, 0, 0, 0.432);
 }
-
 li {
     color: #fff;
     list-style-type: none;
     margin-top: 5px;
 }
+
+#nav__checkbox:checked~.nav__menu {
+    display: block;
+}
+
+#nav__checkbox:checked~.close {
+    display: block;
+}
+
+#nav__checkbox:checked~.menu {
+    display: none;
+}
+
 
 li a {
     font-family: andalemo;
@@ -26,26 +40,16 @@ li a {
 
 .nav__toggle svg {
     width: 1rem;
-    fill: var(--white);
+    fill: var(--white); 
+    
 }
+
 
 .nav__toggle .close {
     display: none;
 }
 
 .menu {
-    display: none;
-}
-
-#nav__checkbox:checked~.nav__menu {
-    display: block;
-}
-
-#nav__checkbox:checked~.close {
-    display: block;
-}
-
-#nav__checkbox:checked~.menu {
     display: none;
 }
 
@@ -85,11 +89,16 @@ li a {
 }
 
 li a {
-    color: inherit;
-    font-size: 1.1rem;
-    text-decoration: none;
     margin-left: 50px;
     margin-right: 50px;
+    color: inherit;
+    font: {
+        size: 1.1rem;
+    }
+    text: {
+        decoration: none;
+    }
+
 }
 
 .close .menu {
@@ -100,4 +109,5 @@ li a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }

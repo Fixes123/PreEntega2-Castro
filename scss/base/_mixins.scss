@@ -1,0 +1,9 @@
+@mixin margin_top_margin_bottom{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@mixin margin_left_margin_top{
+    margin-left: 55px;
+    margin-top: 100px;
+}
